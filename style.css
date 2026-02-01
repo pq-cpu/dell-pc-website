@@ -1,44 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Segoe UI", Arial, sans-serif;
     margin: 0;
-    background-color: #f4f6f8;
+    background-color: #f2f5f8;
     color: #333;
 }
 
+/* Header */
 header {
-    background-color: #0076ce;
+    background: linear-gradient(135deg, #0076ce, #004a8f);
     color: white;
-    padding: 20px;
+    padding: 30px 20px;
     text-align: center;
 }
 
+/* Main content */
 main {
-    padding: 20px;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
 }
 
+/* Card sections */
 .info, .specs {
     background-color: white;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
+h2 {
+    margin-top: 0;
+    color: #0076ce;
+}
+
+/* Button */
 button {
-    padding: 10px 15px;
+    display: block;
+    margin: 20px auto;
+    padding: 12px 20px;
     background-color: #0076ce;
     color: white;
+    font-size: 16px;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 button:hover {
-    background-color: #005fa3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 118, 206, 0.4);
 }
 
+/* Message text */
+#message {
+    text-align: center;
+    font-weight: bold;
+    color: #004a8f;
+}
+
+/* Footer */
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: #ddd;
-    margin-top: 20px;
+    padding: 15px;
+    background-color: #e0e0e0;
+    margin-top: 40px;
 }
